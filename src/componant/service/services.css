@@ -1,0 +1,28 @@
+.services .flex {
+    align-items: self-start;
+}
+.services h2.title {
+    color: var(--title);
+}
+
+.services .srv i {
+    margin-right: 1.5rem;
+    font-size: 2.4rem;
+    color: var(--blue);
+}
+.services .srv {
+    margin-bottom: 2rem;
+}
+.services .srv  h3{
+    font-size: 24px;
+   color: var(--title);
+}
+.services .srv  p{
+   color: var(--subtitle);
+}
+
+@media (max-width:760px) {
+    .services .img{
+        display: none;
+    }
+}

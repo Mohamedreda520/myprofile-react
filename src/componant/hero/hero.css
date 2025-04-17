@@ -1,0 +1,71 @@
+/* section hero */
+section.hero {
+  margin-top: 3rem;
+}
+/* ================== */
+/*  1. left section  */
+/* ================== */
+
+.hero .left-section { 
+   flex-grow: 1;
+} 
+.hero .left-section .parent-avatar img.avatar {
+  width: 100px;
+  border: 1px solid darkgray;
+  border-radius: 50%;
+  padding: 2px;
+  box-shadow: 2px 2px 40px rgba(203, 200, 200, 0.952) inset;
+}
+ 
+.hero .left-section h1.title {
+  line-height: 3.7rem;
+  color: var(--title);
+  margin: 24px 0;
+  opacity: 1;
+    font-family: serif;
+    font-size: 48px;
+    font-weight: 600;
+} 
+.light .hero .left-section h5 {
+  color: var(--title);
+}
+.hero .left-section p.sub-title {
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  color: var(--subtitle);
+  margin-bottom: 1em;
+} 
+.hero .left-section .all-icons {
+  
+  align-items: center;
+  font-size: 25px;
+  color: var(--icon-hover);
+} 
+ .hero .left-section .all-icons .icon{
+  font-size: 25px;
+  color: var(--icon-hover);
+} 
+.light .hero .left-section .all-icons .icon {
+  font-size: 25px;
+  color: #495057;
+} 
+.hero .left-section .all-icons .icon:hover {
+  color: #fffae9;
+  font-size: 27px;
+  transition: 0.3ms;
+  cursor: pointer;
+}
+.light .hero .left-section .all-icons .icon:hover {
+  color: #7c7a78;
+  /* font-size: 27px; */
+  transition: 0.3ms;
+  cursor: pointer;
+}
+/* ================== */
+/* ====  right section ======= */
+/* ================== */
+@media (max-width:995px) {
+  .laptop-animation {
+    display: none;
+  }
+}

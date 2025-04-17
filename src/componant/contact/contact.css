@@ -1,0 +1,76 @@
+
+/* ================== */
+/*  1. contact us ===> form  */
+/* ================== */
+
+.contact-us h1.title {
+    font-size: 2.4rem;
+    color: var(--title);
+    margin-bottom: 2rem;
+
+}
+.contact-us h1.title .icon-envelope-o {
+    color: var(--subtitle);
+    margin-right: 1rem;
+    font-size: 2.6rem;
+}
+.contact-us .sub-title {
+    color: var(--subtitle);
+}
+.contact-us .flex {
+    justify-content: space-between;
+}
+.contact-us .flex form  {
+    flex-grow: 1;
+}
+.contact-us form label {
+    color: var(--subtitle);
+    width: -webkit-fill-available;
+}
+.contact-us div.flex form #email::placeholder,
+    .contact-us div.flex form #message::placeholder{
+        color: #fff;
+    }
+    .light .massage{
+        color: var(--title); 
+    }
+/* ================== */
+/*  2. contact us ===> animation  */
+/* ================== */
+
+
+/* ================== */
+/*  2. contact us ===> @media  */
+/* ================== */
+@media (max-width:550px) {
+    .animation {
+        display: none;
+    }
+    .contact-us div.flex  {
+flex-direction: column;
+align-items: start;
+    }
+    .contact-us div.flex form #email,
+    .contact-us div.flex form #massage, 
+    .contact-us div.flex form {
+        width: 100%;
+    }
+    .contact-us div.flex form .submit {
+        align-items: center;
+    }
+    .contact-us h1.title {
+        font-size: 1.5rem;
+       
+    
+    }
+    .contact-us h1.title .icon-envelope-o {
+       
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:995px) {
+    .contact-us .contact-animation {
+        display: none;
+    }
+}

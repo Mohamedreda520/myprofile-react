@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+ position: sticky;
+ top:1rem;
+ z-index: 1111;   
+}
+header.flex {
+    justify-content: space-between;
+}
+header ul.flex{
+    gap: 16px;
+  
+}
+header ul li a{
+    color: var(--title);
+    opacity: 0.9;
+    font-size: 0.88rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: color 0.5s ;
+}
+header ul a:hover{
+    font-size: 0.9rem;
+    opacity: 1;
+    color: var(--blue);
+}
+header nav {
+    background-color: var(--bgheader);
+    padding: 0.77rem 1.6rem;
+    border-radius: 55px;
+}
+
+header button.menu {
+    display: none;
+}
+
+/* popup */
+header .fixed {
+    position: fixed;
+    z-index: 11;
+    inset: 0;
+    background-color: rgba(40, 40, 48, 0.90);
+}
+@keyframes mymove{
+0% {transform:scale(0)}
+60% {transform:scale(1.2);}
+100% {transform:scale(1);}
+}
+header .fixed ul.popup{
+    animation: mymove 0.5s 1;
+    width: 85%;
+    background-color: var(--secondry);
+    padding: 1rem 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 1em;
+}
+header .fixed ul.popup li:first-child {
+    border-bottom: none !important;
+    padding-bottom: 0.5em !important;
+    padding-top: 0.2em !important;
+    text-align: right;
+}
+header .fixed ul.popup li:not(:last-child){
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.77em;
+    padding-top: 0.5em;
+}
+header .fixed ul.popup li a {font-size: 1rem;}
+@media (max-width:700px) {
+    header nav {display: none;}
+    header button.menu {
+        display: block;
+    }
+}
+
+/* button && icon close */
+header button  .icon-close{
+    font-size: 20px;
+}
+ header .popup li button:hover .icon-close{
+  rotate: 180deg;
+  transition: 0.3s;
+  font-weight: bold;
+  
+  
+}
+
+header button span.f-3{
+    font-size: 26px;
+    font-weight: 800;
+    display: flex;
+    padding: 4px 0;
+}

@@ -1,0 +1,56 @@
+/* ================== */
+/*  1. footer ===> links */
+/* ================== */
+footer {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer ul.flex  {
+gap: 20px;
+flex-wrap: wrap;
+}
+
+footer ul.flex li a {
+    color: var(--subtitle);
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: 0.3s;
+}
+footer ul.flex li a:hover {
+    color: var(--blue);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+
+
+/* ================== */
+/*  2. footer ===> p */
+/* ================== */
+
+footer p {
+    margin-bottom: 0;
+}
+.light footer p {
+    color: var(--subtitle);
+}
+
+
+
+/* ================== */
+/*  3. footer ===> @media */
+/* ================== */
+@media (max-width:760px) {
+    footer.flex,
+    footer.flex ul.flex{
+        justify-content: center;
+        align-items: center;
+    }
+    footer.flex ul.flex{
+      margin-bottom: 1rem;
+    }
+}
